@@ -4,9 +4,9 @@ const Capabilities = () => {
     return (
         <div className="md:mb-50">
             <Copy>
-                <p data-lag={0.4} className="text-3xl sm:text-4xl md:text-5xl mb-8 text-shadow-text">Capabilities</p>
+                <p data-lag={0.4} className="text-5xl  md:text-7xl  text-shadow-text">Capabilities</p>
             </Copy>
-            <div className="flex flex-col text-[#171717] dark:text-[#efeded]  text-4xl md:text-5xl">
+            <div className="flex flex-col text-[#171717] dark:text-[#efeded] mt-13  text-3xl">
                 {/* Capability 1 */}
                 <div data-cursor-text="web" className="relative overflow-hidden group cursor-hover-target cursor-hover-capability">
                     <Copy>

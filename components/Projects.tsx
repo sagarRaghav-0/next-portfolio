@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div className="py-25  md:py-[13em] flex flex-col md:gap-16 " >
             <Copy>
-                <p data-speed={0.5} className="text-3xl sm:text-4xl md:text-5xl  mb-0 md:mb-10 text-shadow-text">
+                <p data-speed={0.5} className="text-5xl  md:text-7xl  mb-0 md:mb-10 text-shadow-text">
                     Projects
                 </p>
             </Copy>

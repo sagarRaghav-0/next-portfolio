@@ -15,12 +15,12 @@ const page = () => {
             <Copy>
 
 
-                <h2 data-lag={0.2} className=' text-3xl sm:text-4xl md:text-5xl text-shadow-text mb-7'>Capabilities</h2>
+                <h2 data-lag={0.2} className=' text-5xl  md:text-7xl text-shadow-text '>Capabilities</h2>
 
             </Copy>
 
 
-            <div className="flex flex-col text-[#171717] dark:text-[#efeded] ">
+            <div className="flex flex-col mt-13 text-[#171717] dark:text-[#efeded] ">
                 {/* Capability 1 */}
                 <div data-cursor-text="web" className="relative overflow-hidden group md:mb-0 mb-5 cursor-hover-target cursor-hover-capability">
                     <div className='flex flex-col md:flex-row md:items-center justify-between  py-2 relative z-10  transition-colors duration-500 group-hover:text-white'>
