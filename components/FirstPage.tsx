@@ -52,6 +52,7 @@ const FirstPage = () => {
                     width={100}
                     height={100}
                     className=" w-full h-45 "
+                    priority
                 />
             </div>
         </div>
