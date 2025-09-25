@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import Copy from "./gsap/Copy"
 import GsapAnimate from "./gsap/GsapAnimate"
 
@@ -19,17 +20,25 @@ const Footer = () => {
             </div>
             <div className="md:text-center col-span-4 md:col-span-1">
                 <Copy>
-                    <div data-cursor-text="LnkedIn" className="cursor-hover-target cursor-hover-social">LinkedIn</div>
-                    <div data-cursor-text="Instagram" className="cursor-hover-target cursor-hover-social">Instagram</div>
-                    <div data-cursor-text="Github" className="cursor-hover-target cursor-hover-social">GitHub</div>
+                    <Link data-cursor-text="LnkedIn" target="_blank" href="https://www.linkedin.com/in/sagar-raghav-6890582a0/" className="cursor-hover-target cursor-hover-social flex items-center gap-2  hover:translate-x-2 transition-transform">
+                        LinkedIn
+                    </Link>
+                    <Link data-cursor-text="Instagram" target="_blank" href="#" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        Instagram
+                    </Link>
+                    <Link data-cursor-text="Github" target="_blank" href="https://github.com/sagarRaghav-0" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        Github
+                    </Link>
                 </Copy>
             </div>
 
             <div className="md:text-center col-span-4 md:col-span-1">
                 <Copy>
 
-                    <div data-cursor-text="Email" className="cursor-hover-target cursor-hover-social">Email</div>
-
+                    <Link data-cursor-text="Email" target="_blank" href="mailto:rajatb9355@gmail.com?subject=Hello&body=Hi, I’d like to get in touch!"
+                        className="cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        Email
+                    </Link>
                 </Copy>
 
             </div>

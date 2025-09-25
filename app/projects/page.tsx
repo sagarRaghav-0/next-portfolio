@@ -8,7 +8,10 @@ const Page = () => {
             <div className=" relative flex flex-col justify-center md:pt-[10vh] pt-[25vh]  items-center pb-[15vh]">
                 {/* Project 1 */}
                 <div data-lag={0.3} className=" relative w-screen h-[23vh] md:h-screen mb-20">
-                    <Link href="#">
+                    <Link
+                        href="https://next-e-commerce-black.vercel.app/"
+                        target="_blank"
+                    >
                         <Image
                             data-cursor-text="visit project"
                             src="/ecom.webp"

@@ -16,16 +16,17 @@ const page = () => {
                 <div data-lag={0.5} className="flex flex-col text-3xl space-y-4 max-w-[400px]">
                     <Copy>
 
-                        <Link data-cursor-text="LnkedIn" href="#" className="cursor-hover-target cursor-hover-social flex items-center gap-2  hover:translate-x-2 transition-transform">
+                        <Link data-cursor-text="LnkedIn" target="_blank" href="https://www.linkedin.com/in/sagar-raghav-6890582a0/" className="cursor-hover-target cursor-hover-social flex items-center gap-2  hover:translate-x-2 transition-transform">
                             LinkedIn <span>→</span>
                         </Link>
-                        <Link data-cursor-text="Email" href="#" className="cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        <Link data-cursor-text="Email" target="_blank" href="mailto:rajatb9355@gmail.com?subject=Hello&body=Hi, I’d like to get in touch!"
+                            className="cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
                             Email <span>→</span>
                         </Link>
-                        <Link data-cursor-text="Instagram" href="#" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        <Link data-cursor-text="Instagram" target="_blank" href="#" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
                             Instagram <span>→</span>
                         </Link>
-                        <Link data-cursor-text="Github" href="#" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        <Link data-cursor-text="Github" target="_blank" href="https://github.com/sagarRaghav-0" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
                             Github <span>→</span>
                         </Link>
                     </Copy>

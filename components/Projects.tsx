@@ -17,7 +17,8 @@ const Projects = () => {
                 <GsapAnimate from="left">
                     <Link
                         data-cursor-text="visit project"
-                        href="/projects/ecom"
+                        href="https://next-e-commerce-black.vercel.app/"
+                        target="_blank"
                         className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative"
                     >
                         <Image
@@ -33,7 +34,7 @@ const Projects = () => {
                 <GsapAnimate from="right">
                     <Link
                         data-cursor-text="visit project"
-                        href="/projects/other"
+                        href="#"
                         className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
                     >
                         <Image
