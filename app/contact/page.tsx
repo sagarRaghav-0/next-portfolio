@@ -5,10 +5,9 @@ const page = () => {
     return (
         <div className='px-5 md:px-10  bg-[#efefef] font-Outfit dark:bg-[#000000e1] dark:text-[#efeded]'>
             <div className='flex flex-col pt-[15vh] h-screen justify-center pb-[15vh]'>
-                <div data-lag={0.4} className='flex flex-col gap-5 mb-20'>
+                <div data-lag={0.4} className='flex flex-col gap-5 mb-20  max-w-[50rem]'>
                     <Copy>
-                        <p className='text-3xl sm:4xl md:text-5xl text-shadow-text mb-3 md:leading-[3.5rem] '>Behind every <span> great design </span> there’s a<br />
-                            conversation waiting to <span> happen</span>
+                        <p className='text-2xl  md:text-5xl text-shadow-text mb-3 md:leading-[3.5rem] '>Behind every <span> great design </span> there’s a conversation waiting to <span> happen</span>
                         </p>
                         <p>Let’s talk, let’s explore, let’s create.</p>
                     </Copy>
