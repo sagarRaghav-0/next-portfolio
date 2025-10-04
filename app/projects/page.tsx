@@ -25,7 +25,7 @@ const Page = () => {
 
                 {/* Project 2 */}
                 <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen">
-                    <Link href="#">
+                    <Link href="https://next-forgefit.vercel.app/" target="_blank">
                         <Image
                             data-cursor-text="visit project"
 
