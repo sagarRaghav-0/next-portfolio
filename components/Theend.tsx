@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import Copy from "./gsap/Copy"
 import GsapAnimate from "./gsap/GsapAnimate"
 
@@ -16,16 +17,18 @@ const Theend = () => {
                 </Copy>
                 <div className="bg-[#dadada] p-2 ">
                     <GsapAnimate from="left">
-                        <Image
-                            src="/box.avif"
-                            alt="contact me"
-                            width={100}
-                            height={100}
-                            className=" w-7 h-7"
-                        />
+                        <Link data-cursor-text="Email" target="_blank" href="mailto:rajatb9355@gmail.com?subject=Hello&body=Hi, I’d like to get in touch!"
+                            className="cursor-hover-target cursor-hover-social flex items-center gap-2 hover:scale-150 transition-transform">
+                            <Image
+                                src="/box.avif"
+                                alt="contact me"
+                                width={100}
+                                height={100}
+                                className=" w-7 h-7"
+                            />
+                        </Link>
                     </GsapAnimate>
                 </div>
-
             </div>
         </div>
     )
