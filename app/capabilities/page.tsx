@@ -54,7 +54,7 @@ const page = () => {
                         <p data-lag={0.1} className="text-3xl">
                             Web Development
                         </p>
-                        <p data-lag={0.} >I design interfaces that don’t just work—they captivate, guide, and transform the way people experience your brand.</p>
+                        <p data-lag={0.} >I turn creative ideas into powerful web applications using modern development practices.</p>
                     </div>
                     <div className="absolute inset-x-0 bottom-0 h-0 bg-[#171717] dark:bg-[#797878aa] transition-all duration-500 group-hover:h-full"></div>
                     <hr className="border-t border-[#d4d4d4]" />
