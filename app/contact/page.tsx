@@ -23,7 +23,7 @@ const page = () => {
                             className="cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
                             Email <span>→</span>
                         </Link>
-                        <Link data-cursor-text="Instagram" target="_blank" href="#" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        <Link data-cursor-text="Instagram" target="_blank" href="https://www.instagram.com/rjt_0_0/" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
                             Instagram <span>→</span>
                         </Link>
                         <Link data-cursor-text="Github" target="_blank" href="https://github.com/sagarRaghav-0" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
