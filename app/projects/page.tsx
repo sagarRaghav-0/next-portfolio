@@ -24,7 +24,7 @@ const Page = () => {
                 </div>
 
                 {/* Project 2 */}
-                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen">
+                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen mb-20">
                     <Link href="https://next-forgefit.vercel.app/" target="_blank">
                         <Image
                             data-cursor-text="visit project"
@@ -33,6 +33,36 @@ const Page = () => {
                             alt="Fitness Project"
                             fill
                             className="object-contain  cursor-hover-target"
+                        />
+                    </Link>
+                </div>
+
+                {/* Project 3 */}
+                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen mb-20 ">
+                    <Link
+                        href="https://mars-explorer-psi.vercel.app/" target="_blank">
+                        <Image
+                            data-cursor-text="visit project"
+
+                            src="/mars.webp"
+                            alt="Mars-Explorer App"
+                            fill
+                            className="object-contain  cursor-hover-target px-15"
+                        />
+                    </Link>
+                </div>
+
+                {/* Project 4 */}
+                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen ">
+                    <Link
+                        href="https://wheather-api-chi.vercel.app/" target="_blank">
+                        <Image
+                            data-cursor-text="visit project"
+
+                            src="/wheather.webp"
+                            alt="Wheather Api App"
+                            fill
+                            className="object-contain  cursor-hover-target px-25"
                         />
                     </Link>
                 </div>

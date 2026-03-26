@@ -12,7 +12,7 @@ const Projects = () => {
                 </p>
             </Copy>
 
-            <div className="grid grid-cols-1 md:grid-cols-2  md:gap-x-8  mt-[-3vh] sm:mt-[-3vh] md:mt-0">
+            <div className="grid grid-cols-1 md:grid-cols-2  md:gap-x-8 md:gap-y-36  mt-[-3vh] sm:mt-[-3vh] md:mt-0">
                 {/* Project 1 */}
                 <GsapAnimate from="left">
                     <Link
@@ -34,12 +34,42 @@ const Projects = () => {
                 <GsapAnimate from="right">
                     <Link
                         data-cursor-text="visit project"
-                        href="https://next-forgefit.vercel.app/ " target="_blank"
+                        href="https://next-forgefit.vercel.app/" target="_blank"
                         className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
                     >
                         <Image
                             src="/fit.webp"
                             alt="Fitness Project"
+                            fill
+                            className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </Link>
+                </GsapAnimate>
+                {/* Project 3 */}
+                <GsapAnimate from="left">
+                    <Link
+                        data-cursor-text="visit project"
+                        href="https://wheather-api-chi.vercel.app/" target="_blank"
+                        className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
+                    >
+                        <Image
+                            src="/wheather.webp"
+                            alt="Wheather app"
+                            fill
+                            className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                    </Link>
+                </GsapAnimate>
+                {/* Project 4 */}
+                <GsapAnimate from="right">
+                    <Link
+                        data-cursor-text="visit project"
+                        href="https://mars-explorer-psi.vercel.app/" target="_blank"
+                        className="cursor-hover-target block group h-[280px] sm:h-[320px] md:h-[360px] rounded-xl overflow-hidden relative mt-[-7vh] sm:mt-[-10vh] md:mt-0"
+                    >
+                        <Image
+                            src="/mars.webp"
+                            alt="mars-explorer App"
                             fill
                             className="object-contain md:object-cover transition-transform duration-500 group-hover:scale-110"
                         />
