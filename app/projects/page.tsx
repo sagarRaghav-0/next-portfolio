@@ -38,7 +38,7 @@ const Page = () => {
                 </div>
 
                 {/* Project 3 */}
-                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen md:mb-20 mb-10 ">
+                <div data-lag={0.5} className="relative w-screen h-[25vh] md:h-screen md:mb-20 mb-8 ">
                     <Link
                         href="https://mars-explorer-psi.vercel.app/" target="_blank">
                         <Image
@@ -47,7 +47,7 @@ const Page = () => {
                             src="/mars.webp"
                             alt="Mars-Explorer App"
                             fill
-                            className="object-contain  cursor-hover-target md:px-15 px-4"
+                            className="object-contain  cursor-hover-target md:px-15 "
                         />
                     </Link>
                 </div>
@@ -62,7 +62,7 @@ const Page = () => {
                             src="/wheather.webp"
                             alt="Wheather Api App"
                             fill
-                            className="object-contain  cursor-hover-target md:px-25 px-8"
+                            className="object-contain  cursor-hover-target md:px-25 "
                         />
                     </Link>
                 </div>
