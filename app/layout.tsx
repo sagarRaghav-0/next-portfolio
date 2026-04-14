@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// ✅ Metadata for SEO, OpenGraph, and Twitter
 export const metadata: Metadata = {
   title: "Sagar Raghav | Web Developer",
   description:
@@ -36,19 +35,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Sagar Raghav | Web Developer",
-    description:
-      "Portfolio of Sagar Raghav – Web Developer skilled in Next.js, Tailwind CSS, and modern web technologies.",
-    creator: "@your_twitter_handle", // 👈 change to your handle
-    images: ["https://next-portfolio-drab-two.vercel.app/uxui.webp"],
-  },
-
-  icons: {
-    icon: "/s.webp", // 👈 place your favicon in /public
-  },
 };
 
 const geistSans = Geist({
@@ -74,7 +60,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* All GSAP + cursor logic lives in Root (client component) */}
         <Root>{children}</Root>
       </body>
     </html>

@@ -23,7 +23,7 @@ const Footer = () => {
                     <Link data-cursor-text="LnkedIn" target="_blank" href="https://www.linkedin.com/in/sagar-raghav-6890582a0/" className="cursor-hover-target cursor-hover-social flex items-center gap-2  hover:translate-x-2 transition-transform">
                         LinkedIn
                     </Link>
-                    <Link data-cursor-text="Instagram" target="_blank" href="#" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    <Link data-cursor-text="Instagram" target="_blank" href="https://www.instagram.com/rjt_0_0/" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">
                         Instagram
                     </Link>
                     <Link data-cursor-text="Github" target="_blank" href="https://github.com/sagarRaghav-0" className=" cursor-hover-target cursor-hover-social flex items-center gap-2 hover:translate-x-2 transition-transform">

@@ -97,7 +97,6 @@ const Copy: React.FC<React.PropsWithChildren<CopyProps>> = ({
         dependencies: [animateOnScroll, delay],
     });
 
-    // ✅ Wrap children in a div instead of cloneElement
     return (
         <div ref={containerRef} data-copy-wrapper="true">
             {children}

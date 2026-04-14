@@ -9,7 +9,7 @@ const Navbar = () => {
     const audioRef = useRef<HTMLAudioElement | null>(null)
 
     useEffect(() => {
-        // Try autoplay muted (bypasses most browser restrictions)
+
         const audio = audioRef.current
         if (audio) {
             audio.volume = 0.3

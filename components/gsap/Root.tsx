@@ -31,6 +31,8 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
             effects: true, // enable data-speed/data-lag effects
         });
 
+
+
         gsap.set(cursor, { xPercent: -100, yPercent: -300 });
 
         const handleMove = (e: MouseEvent) => {
@@ -246,6 +248,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
         return () => {
             main.removeEventListener("mousemove", handleMove);
+
             hoverTargets.forEach((el) => {
                 el.removeEventListener("mouseenter", handleEnter);
                 el.removeEventListener("mouseleave", handleLeave);
@@ -264,7 +267,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
             smoother.kill();
         };
-    }, [usePathname()]); // 👈 re-run when route changes
+    }, [usePathname()]);
 
 
     return (
@@ -273,6 +276,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
                 ref={cursorRef}
                 className="hidden z-50 fixed md:flex items-center justify-center rounded-full dark:bg-[#efeded] bg-[#171717] pointer-events-none w-[20px] h-[20px] text-[2px] font-bold"
             />
+
             <div ref={mainRef}>
                 <Navbar />
                 <div ref={contentRef}>
