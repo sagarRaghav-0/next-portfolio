@@ -20,15 +20,13 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
         const cursor = cursorRef.current;
 
         if (!main || !cursor) return;
-        // Register GSAP plugin
         gsap.registerPlugin(ScrollSmoother);
 
-        // Create smooth scrolling
         const smoother = ScrollSmoother.create({
             wrapper: main,
             content: content,
-            smooth: 2,  // scroll smoothness
-            effects: true, // enable data-speed/data-lag effects
+            smooth: 2,
+            effects: true,
         });
 
 
@@ -100,7 +98,6 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
             cursor.textContent = label;
             cursor.classList.add("cursor-lens");
 
-            // Define a mapping of label -> image URL
             const labelImageMap: Record<string, string | null> = {
                 "LnkedIn": "url('/in.gif')",
                 "Instagram": "url('/insta.gif')",
@@ -111,7 +108,6 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
             const backgroundImage = labelImageMap[label] ?? "none";
 
-            // Remove text content if you're showing an image instead
             cursor.textContent = backgroundImage !== "none" ? "" : label;
 
 
@@ -124,8 +120,8 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                backgroundColor: "transparent", // remove color
-                color: "#fff", // optional
+                backgroundColor: "transparent",
+                color: "#fff",
                 duration: 0.3,
                 borderRadius: "50%",
             });
@@ -145,7 +141,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
 
             gsap.to(cursor, {
-                scale: 1, // back to normal size
+                scale: 1,
                 backgroundImage: "none",
                 backgroundColor: darkMode ? "#efefef" : "#171717",
 
@@ -155,7 +151,6 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
             });
 
-            // Optionally clear text content
             cursor.textContent = "";
         };
 
@@ -178,7 +173,6 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
             const backgroundImage = labelImageMap[label] ?? "none";
 
-            // Remove text content if you're showing an image instead
             cursor.textContent = backgroundImage !== "none" ? "" : label;
 
             gsap.to(cursor, {
@@ -187,8 +181,8 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                backgroundColor: "transparent", // remove color
-                color: "#fff", // optional
+                backgroundColor: "transparent",
+                color: "#fff",
                 duration: 0.3,
                 width: "70px",
                 height: "40px",
@@ -203,13 +197,12 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
             const hoverEl = target.closest(".cursor-hover-target") as HTMLElement | null;
             if (!hoverEl) return;
 
-            // Reset the cursor appearance
             cursor.classList.remove("cursor-lens");
 
             const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
             gsap.to(cursor, {
-                scale: 1, // back to normal size
+                scale: 1,
                 backgroundImage: "none",
                 backgroundColor: darkMode ? "#efefef" : "#171717",
                 color: "#fff",
@@ -220,7 +213,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
             });
 
-            // Optionally clear text content
+
             cursor.textContent = "";
         };
 
