@@ -13,7 +13,7 @@ const Purpose = () => {
             <Copy>
                 <h2 data-lag={0.5} className="text-5xl md:text-7xl  text-[#aeaeae]">Purpose</h2>
             </Copy>
-            <div className="md:text-4xl text-2xl flex flex-col  md:leading-15">
+            <div className="md:text-4xl text-xl flex flex-col  md:leading-15">
 
                 <Copy>
 
