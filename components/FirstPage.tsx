@@ -48,8 +48,8 @@ const FirstPage = () => {
 
                 className="cursor-hover-target image flex justify-center items-center md:col-span-1 relative top-[-24vh] col-span-1   md:top-[-5vh] px-6">
                 <Image
-                    // data-lag={1}
-                    src="/fdbz.gif"
+                    data-lag={1}
+                    src="/dbz.gif"
                     alt="fight"
                     width={100}
                     height={100}
