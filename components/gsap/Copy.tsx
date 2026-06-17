@@ -24,7 +24,6 @@ const Copy: React.FC<React.PropsWithChildren<CopyProps>> = ({
     const lines = useRef<HTMLElement[]>([]);
 
     useGSAP(() => {
-
         if (!containerRef.current) return;
 
         splitRef.current = [];
@@ -44,46 +43,26 @@ const Copy: React.FC<React.PropsWithChildren<CopyProps>> = ({
         elements.forEach((element) => {
             elementRef.current.push(element);
 
-            const createSplit = () => {
-                const split = SplitText.create(element, {
-                    type: "lines",
-                    mask: "lines",
-                    linesClass: "line++",
-                });
-
-                splitRef.current.push(split);
-
-                const computedStyle = window.getComputedStyle(element);
-                const textIndent = computedStyle.textIndent;
-
-                if (textIndent && textIndent !== "0px") {
-                    if (
-                        split.lines.length > 0 &&
-                        split.lines[0] instanceof HTMLElement
-                    ) {
-                        split.lines[0].style.paddingLeft = textIndent;
-                    }
-                    element.style.textIndent = "0";
-                }
-
-                lines.current.push(
-                    ...split.lines.filter(
-                        (el): el is HTMLElement => el instanceof HTMLElement
-                    )
-                );
-            };
-
-            createSplit();
-
-            document.fonts.ready.then(() => {
-                splitRef.current.forEach((s) => s.revert());
-                splitRef.current = [];
-                lines.current = [];
-
-                createSplit();
-
-                ScrollTrigger.refresh();
+            const split = SplitText.create(element, {
+                type: "lines",
+                mask: "lines",
+                linesClass: "line++",
+                autoSplit: true,
             });
+
+            splitRef.current.push(split);
+
+            const computedStyle = window.getComputedStyle(element);
+            const textIndent = computedStyle.textIndent;
+
+            if (textIndent && textIndent !== "0px") {
+                if (split.lines.length > 0 && split.lines[0] instanceof HTMLElement) {
+                    split.lines[0].style.paddingLeft = textIndent;
+                }
+                element.style.textIndent = "0";
+            }
+
+            lines.current.push(...split.lines.filter((el): el is HTMLElement => el instanceof HTMLElement));
         });
 
         gsap.set(lines.current, { y: "100%" });
