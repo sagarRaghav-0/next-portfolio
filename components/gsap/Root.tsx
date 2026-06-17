@@ -106,16 +106,19 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
                 "Me": "url('/v.webp')",
             };
 
-            const backgroundImage = labelImageMap[label] ?? "none";
+            const backgroundImage = labelImageMap[label] ?? "none"; //select image
 
             cursor.textContent = backgroundImage !== "none" ? "" : label;
 
 
-
-
             // Animate with gsap
+
+            const scale =
+                label === "Me" ? 7 : backgroundImage !== "none" ? 4 : 2;
+
+
             gsap.to(cursor, {
-                scale: backgroundImage !== "none" ? 4 : 2,
+                scale,
                 backgroundImage: backgroundImage,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
