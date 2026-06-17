@@ -14,6 +14,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
     const mainRef = useRef<HTMLDivElement | null>(null);
     const cursorRef = useRef<HTMLDivElement | null>(null);
     const contentRef = useRef<HTMLDivElement | null>(null);
+    const usePath = usePathname();
     useEffect(() => {
         const main = mainRef.current;
         const content = contentRef.current;
@@ -263,7 +264,7 @@ export default function RootClient({ children }: { children: React.ReactNode }) 
 
             smoother.kill();
         };
-    }, [usePathname()]);
+    }, [usePath]);
 
 
     return (

@@ -27,12 +27,12 @@ const FirstPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 mt-10 min-h-screen">
             {/* Text Section */}
             <div className=" col-span-1 md:col-span-2 md:px-0 flex flex-col">
-                <Copy delay={0.5}>
-                    <p data-lag={0.1} className="text-2xl sm:text-4xl md:text-5xl  mb-12 hidden  md:block leading-snug">
-                        Turning ideas into memorable digital experiences through thoughtful design, seamless functionality, and modern web technologies.
-                    </p>
+                {/* <Copy delay={0.5}> */}
+                <p data-lag={0.1} className="text-2xl sm:text-4xl md:text-5xl  mb-12 hidden  md:block leading-snug">
+                    Turning ideas into memorable digital experiences through thoughtful design, seamless functionality, and modern web technologies.
+                </p>
 
-                </Copy>
+                {/* </Copy> */}
                 <Copy delay={0.7}>
 
                     <p data-lag={0.6} className="text-md sm:text-2xl md:text-3xl text- text-shadow-text mt-6 md:mt-0 leading-relaxed">
